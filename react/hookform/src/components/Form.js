@@ -42,6 +42,11 @@ const submitHandler = (e) => {
                         console.log(e.target.value);
                         setFirstName(e.target.value);
                     }} type = "text"></input>
+                    {
+                        firstName.length > 0 && firstName.length < 2? 
+                        <p>First name must be at least 2 characters.</p>
+                        :null
+                    }
                 </div>
 <br></br>
                 <div>
@@ -52,6 +57,11 @@ const submitHandler = (e) => {
                         console.log(e.target.value);
                         setLastName(e.target.value);
                     }}type = "text"></input>
+                    {
+                        lastName.length > 0 && lastName.length < 2? 
+                        <p>Last name must be at least 2 characters.</p>
+                        :null
+                    }
                 </div>
                 <br></br>
                 <div>
@@ -62,6 +72,11 @@ const submitHandler = (e) => {
                         console.log(e.target.value);
                         setEmail(e.target.value);
                     }} type = "text"></input>
+                    {
+                        email.length > 0 && email.length < 5? 
+                        <p>Email must be at least 5 characters.</p>
+                        :null
+                    }
                 </div>
                 <br></br>
                 <div>
@@ -72,6 +87,12 @@ const submitHandler = (e) => {
                         console.log(e.target.value);
                         setPassword(e.target.value);
                     }} type = "password"></input>
+                    {
+                        password.length > 0 && password.length < 8? 
+                        <p>Password must be at least 8 characters.</p>
+                        :null
+                    }
+
                 </div>
                 <br></br>
                 <div>
@@ -82,6 +103,11 @@ const submitHandler = (e) => {
                         console.log(e.target.value);
                         setConfirmPassword(e.target.value);
                     }} type = "password"></input>
+                {
+                    confirmPassword.length>0 && password !== confirmPassword ? 
+                    <p>Passwords must match.</p>
+                    :null
+                }
                 </div>
 
             <button>Register</button>
