@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+.nonClickedTab {
+  color: teal; 
+  background-color: white;
+  border: 2px solid #bbbbbb;
+  border-radius: 60px;
+  margin: 5px;
+  padding: 20px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.clickedTab {
+  color: white;
+  background-color: teal;
+  border: 2px solid teal; 
+  border-radius: 60px;
+  margin: 5px;
+  padding: 20px;
+  vertical-align: middle;
+}
